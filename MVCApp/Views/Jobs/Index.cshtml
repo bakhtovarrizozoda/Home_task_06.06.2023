@@ -1,0 +1,25 @@
+@model List<JobDto>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">CategoryId</th>
+      <th scope="col">ClousingDate</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var job in Model)
+{
+    <tr>
+      <td>@job.Id</td>
+      <td>@job.Title</td>
+      <td>@job.CategoryId</td>
+      <td>@job.ClousingDate</td>
+    </tr>
+    <br>
+    <br>
+}
+  </tbody>
+</table>
